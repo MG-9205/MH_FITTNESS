@@ -1,0 +1,55 @@
+:root{
+    --var1:rgb(247, 55, 151)
+}
+.logo{
+    width: 4rem;
+    height: 3rem;
+    border-radius: 50%;
+    padding-top: 0.5rem;
+    margin-left: 1rem;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+.nav_ul{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+.navbar li{
+    list-style: none;
+    padding: 10px 10px 10px 10px;
+}
+.nav_link{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    padding: 10px 10px 10px 10px;
+}
+.nav_link:hover{
+    color: var(--var1);
+}
+.join_btn{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  width:5rem;
+  height: 4rem;
+text-decoration: none;
+  background-color: pink;
+  font-size: 1.3rem;
+  color: black;
+}
+.join_btn:hover{
+    background-color: var(--var1);
+    color: white;
+}
+/*mobile navbar style*/
+.mobile_icon{
+    font-size: 25px;
+}

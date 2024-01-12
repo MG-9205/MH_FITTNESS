@@ -1,11 +1,10 @@
-
+import Navbar from './component/Navbar/Navbar' 
 
 function App() {
  
 
   return (
     <>
-     <p>MH FITNESS</p>
     </>
   )
 }
