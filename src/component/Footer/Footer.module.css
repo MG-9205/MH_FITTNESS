@@ -1,0 +1,12 @@
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 2rem;
+    padding-bottom: 20px;
+}
+.icon{
+    color:black;
+}

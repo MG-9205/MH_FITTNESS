@@ -1,0 +1,109 @@
+.main_div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div1{
+    padding: 20px 40px;
+    width: 30%;
+}
+.contact_detail{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contact_detail input{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid #151414;
+    background: none;
+    outline: none;
+    margin: 5px 0;
+    color: white;
+}
+.contact_detail span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    pointer-events: none;
+    transition: 0.5s;
+    margin: 8px 0;
+}
+.contact_detail textarea {
+    resize: none;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #1e1d206d;
+    color: white;
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 5px 0;
+} 
+.contact_detail input:focus~span,
+.contact_detail textarea:focus~span,
+.contact_detail input:valid~span,
+.contact_detail textarea:valid~span
+{
+    color: rgba(255, 0, 0, 0.662);
+    font-size: 15px;
+    transform: translateY(-20px);
+    font-weight: 500;
+}
+.contact_detail button{
+    padding: 5px 10px;
+    font-size: 17px;
+    background: pink;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+}
+.contact_detail button:hover{
+    background: rgb(192, 76, 115);
+}
+.div2{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 22px 40px;
+}
+.div2 h1{
+    margin-bottom: 9px;
+}
+.div2_box{
+    display: flex;
+    align-content: center;
+    margin: 20px 0;
+    position: relative;
+}
+.div2_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 60px;
+    font-size: 22px;
+}
+.div2_text{
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+    font-size: 17px;
+}
+@media screen and (max-width:800px){
+    .main_div{
+        flex-direction: column;
+    }
+    .div1{
+        padding:0;
+        width:80% ;
+    }
+    .div2{
+        width: 80%;
+    }
+}
