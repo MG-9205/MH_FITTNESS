@@ -73,6 +73,7 @@ text-decoration: none;
   right: 0;
   top: 2.5rem;
   width: 50%;
+  padding: 10px 10px 20px 10px;
   background-color: white;
   transition: all 1s linear;
   transform: translateX(100%);
