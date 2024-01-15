@@ -46,7 +46,7 @@ export default function Form() {
           <h1>Contact information</h1>
         </div>
         <div>
-          <i>
+          <i className={Formstyle.text}>
           "Connect with Us for a Stronger You: 
           Reach Out Today and Let's Sculpt Your Fitness Goals Together!"
           </i>

@@ -106,4 +106,10 @@
     .div2{
         width: 80%;
     }
+    .div2 h1{
+        font-size: 1.7rem;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
 }

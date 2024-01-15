@@ -1,13 +1,16 @@
-
+.main_div{
+    padding-bottom: 20px;
+}
 .heading_div{
 display: flex;
 align-items: center;
 justify-content: center;
+padding: 20px 0 20px 0;
 }
 .slider_div{
     padding: 20px 10px 20px 10px;
     position: relative;
-   
+   background-color: gainsboro;
 }
 .image_slider{
     display: grid;
