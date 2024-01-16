@@ -76,6 +76,24 @@
   background: rgb(228, 112, 131);
   color: white;
 }
+
+  .about_intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 50vh;
+    background-color: white;
+  
+  }
+  .about_intro p{
+    width: 70%;
+    text-align: center;
+    font-size: 1.4rem;
+    font-style: italic;
+  }
+
 @media screen and (max-width: 700px) {
   .intro_div1,
   .intro_div2 {
@@ -96,5 +114,8 @@
   }
   .intro_div3 {
     width: 100vw;
+  }
+  .about_intro p{
+    width: 100%;
   }
 }

@@ -12,6 +12,10 @@ export default function Footer() {
   }
   return (
     <div className={Footerstyle.main_div}>
+      <div className={Footerstyle.trial}>
+      Not a Member? Get a 15 Days Free-trial<br/>
+      <span>Fill the form given below .We will contact you soon!!</span>
+      </div>
       <Form/>
       <div className={Footerstyle.links}>
       <a href={links_url.github} target='self'><FaGithub className={Footerstyle.icon}/></a> 

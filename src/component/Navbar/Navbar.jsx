@@ -91,7 +91,7 @@ export default function Navbar() {
                 <NavLink className={() => `${Navstyle.nav_link}`}>About</NavLink>
               </li>
               <li>
-                <NavLink className={() => `${Navstyle.nav_link}`}>Facilities</NavLink>
+                <NavLink to='/Facilities' className={() => `${Navstyle.nav_link}`}>Facilities</NavLink>
               </li>
               <li>
                 <NavLink className={() => `${Navstyle.nav_link}`}>Services</NavLink>

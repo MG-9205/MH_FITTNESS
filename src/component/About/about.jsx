@@ -42,6 +42,18 @@ export default function about() {
           </div>
         </div>
       </section>
+      <div className={aboutstyle.about_intro}>
+      <p>
+      "Welcome to MH Fitness Club, where fitness meets transformation!
+       We are your premier destination for achieving your health and wellness goals.
+         Whether you're a seasoned athlete or just getting started, 
+         we have the resources and support you need to reach your peak performance. 
+      Join us today and unlock your full potential!"</p>
+     <div className={aboutstyle.btn}>
+     <button>
+              <Link  className={aboutstyle.btn_Link}>Join Now</Link>
+            </button> </div>
+    </div>
       <Slider />
     </>
   );

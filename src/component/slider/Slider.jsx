@@ -14,7 +14,9 @@ export default function Slider() {
   return (
     <>
     <div className={Sliderstyle.main_div}>
-        <div className={Sliderstyle.heading_div}> <h2>Image Gallery</h2></div>
+        <div className={Sliderstyle.heading_div}> <h2>Image Gallery</h2>
+        <p>"Explore our cutting-edge gym facilities, dynamic fitness classes, member achievements, and vibrant community events. Witness the energy of a healthier, stronger lifestyle. #FitnessGoals"</p>
+        </div>
         <div className={Sliderstyle.slider_div}>
             <div className={Sliderstyle.image_slider} ref={img_silder}>
             {
@@ -25,10 +27,10 @@ export default function Slider() {
                 ))
             }
            
+           </div>
+                <button className={Sliderstyle.left} onClick={()=>slider_scroller(amount)}>&lt;</button>
+                <button className={Sliderstyle.right} onClick={()=>slider_scroller(-amount)}>&gt;</button>
             </div>
-            <button className={Sliderstyle.left} onClick={()=>slider_scroller(amount)}>&lt;</button>
-            <button className={Sliderstyle.right} onClick={()=>slider_scroller(-amount)}>&gt;</button>
-        </div>
     </div>
     </>
   )

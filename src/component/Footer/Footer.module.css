@@ -13,3 +13,14 @@
 .main_div{
     background-color: white;
 }
+.trial{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 40px 10px 10px 10px;
+    background-color: white;
+  }
+  .trial span{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
