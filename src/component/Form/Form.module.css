@@ -3,10 +3,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 .div1{
     padding: 20px 40px;
     width: 30%;
+    background-color: white;
 }
 .contact_detail{
     position: relative;

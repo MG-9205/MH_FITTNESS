@@ -11,7 +11,7 @@ export default function Footer() {
     "instagram":"https://www.instagram.com/manish_gupta31/"
   }
   return (
-    <div>
+    <div className={Footerstyle.main_div}>
       <Form/>
       <div className={Footerstyle.links}>
       <a href={links_url.github} target='self'><FaGithub className={Footerstyle.icon}/></a> 
