@@ -57,7 +57,7 @@ export default function Navbar() {
                 </NavLink>
               </li>
               <li>
-                <NavLink className={() => `${Navstyle.nav_link}`}>
+                <NavLink  to ='/Services' className={() => `${Navstyle.nav_link}`}>
                   Services
                 </NavLink>
               </li>
@@ -94,10 +94,10 @@ export default function Navbar() {
                 <NavLink to='/Facilities' className={() => `${Navstyle.nav_link}`}>Facilities</NavLink>
               </li>
               <li>
-                <NavLink className={() => `${Navstyle.nav_link}`}>Services</NavLink>
+                <NavLink to='/Services' className={() => `${Navstyle.nav_link}`}>Services</NavLink>
               </li>
               <li>
-                <NavLink className={() => `${Navstyle.nav_link}`}>Membership</NavLink>
+                <NavLink to='/Membership' className={() => `${Navstyle.nav_link}`}>Membership</NavLink>
               </li>
               <li>
                 <NavLink className={() => `${Navstyle.nav_link}`}>Contact us</NavLink>

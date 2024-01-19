@@ -6,6 +6,8 @@ import App from './App.jsx'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Facilities from './component/Facilities/Facilities.jsx'
+import Service from './component/Service/Service.jsx'
+import Membership from './component/Membership/Membership.jsx'
 const router=createBrowserRouter([
   {
     path:'/',
@@ -18,8 +20,17 @@ const router=createBrowserRouter([
       {
         path:'Facilities',
         element:<Facilities/>
+      },
+      {
+        path:'Services',
+        element:<Service/>
+      },
+      {
+        path:'Membership',
+        element:<Membership/>
       }
     ]
+    
   }
 ])
 
