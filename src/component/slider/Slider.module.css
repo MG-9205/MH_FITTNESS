@@ -1,6 +1,7 @@
 .main_div{
     padding-bottom: 20px;
     background-color: white;
+    color: white;
 }
 .heading_div{
 display: flex;
@@ -8,7 +9,8 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 padding: 20px 0 20px 0;
-background-color: gainsboro;
+background-color: rgb(242, 113, 135);
+
 }
 .heading_div p{
     font-size: 1.1rem;
@@ -20,7 +22,7 @@ background-color: gainsboro;
 .slider_div{
     padding: 20px 10px 20px 10px;
     position: relative;
-   background-color: gainsboro;
+    background-color: rgb(242, 113, 135);
 }
 .image_slider{
     display: grid;

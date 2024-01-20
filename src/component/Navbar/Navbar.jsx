@@ -1,4 +1,4 @@
-import { React, useState,useRef } from "react";
+import { React, useState, useRef } from "react";
 import logo_img from "../../assets/image/logo.jpg";
 import Navstyle from "./Navbar.module.css";
 import { Link, NavLink } from "react-router-dom";
@@ -7,22 +7,21 @@ import { MdClose } from "react-icons/md";
 export default function Navbar() {
   const [toggle_menu_icon, set_menu_toggle_icon] = useState("inline");
   const [toggle_close_icon, set_close_toggle_icon] = useState("none");
-  const mobile_menu=useRef("null")
+  const mobile_menu = useRef("null");
   const toggle_icon = () => {
     if (toggle_menu_icon == "inline") {
       set_menu_toggle_icon((toggle_menu_icon) => (toggle_menu_icon = "none"));
       set_close_toggle_icon(
         (toggle_close_icon) => (toggle_close_icon = "inline")
       );
-      console.log(mobile_menu.current)
-      mobile_menu.current.style.transform='translateX(0)'
-   
+      console.log(mobile_menu.current);
+      mobile_menu.current.style.transform = "translateX(0)";
     } else {
       set_menu_toggle_icon((toggle_menu_icon) => (toggle_menu_icon = "inline"));
       set_close_toggle_icon(
         (toggle_close_icon) => (toggle_close_icon = "none")
       );
-      mobile_menu.current.style.transform='translateX(100%)'
+      mobile_menu.current.style.transform = "translateX(100%)";
     }
   };
   return (
@@ -57,21 +56,24 @@ export default function Navbar() {
                 </NavLink>
               </li>
               <li>
-                <NavLink  to ='/Services' className={() => `${Navstyle.nav_link}`}>
+                <NavLink
+                  to="/Services"
+                  className={() => `${Navstyle.nav_link}`}
+                >
                   Services
                 </NavLink>
               </li>
               <li>
-                <NavLink className={() => `${Navstyle.nav_link}`}>
+                <a href="#contact" className={Navstyle.nav_link}>
                   Contact
-                </NavLink>
+                </a>
               </li>
             </ul>
           </div>
           <div>
-            <Link to="/" className={Navstyle.join_btn}>
+            <a href="#contact" className={Navstyle.join_btn}>
               Join us
-            </Link>
+            </a>
           </div>
           <div className={Navstyle.icon_div}>
             <RiMenu3Fill
@@ -88,22 +90,43 @@ export default function Navbar() {
           <div className={Navstyle.mobile_menu} ref={mobile_menu}>
             <ul>
               <li>
-                <NavLink className={() => `${Navstyle.nav_link}`}>About</NavLink>
+                <NavLink className={() => `${Navstyle.nav_link}`}>
+                  About
+                </NavLink>
               </li>
               <li>
-                <NavLink to='/Facilities' className={() => `${Navstyle.nav_link}`}>Facilities</NavLink>
+                <NavLink
+                  to="/Facilities"
+                  className={() => `${Navstyle.nav_link}`}
+                >
+                  Facilities
+                </NavLink>
               </li>
               <li>
-                <NavLink to='/Services' className={() => `${Navstyle.nav_link}`}>Services</NavLink>
+                <NavLink
+                  to="/Services"
+                  className={() => `${Navstyle.nav_link}`}
+                >
+                  Services
+                </NavLink>
               </li>
               <li>
-                <NavLink to='/Membership' className={() => `${Navstyle.nav_link}`}>Membership</NavLink>
+                <NavLink
+                  to="/Membership"
+                  className={() => `${Navstyle.nav_link}`}
+                >
+                  Membership
+                </NavLink>
               </li>
               <li>
-                <NavLink className={() => `${Navstyle.nav_link}`}>Contact us</NavLink>
+                <a href="#contact" className={Navstyle.nav_link}>
+                  Contact us
+                </a>
               </li>
               <li>
-                <Link className={Navstyle.mobile_join_btn}>Join us</Link>
+                <a href="#contact" className={Navstyle.mobile_join_btn}>
+                  Join us
+                </a>
               </li>
             </ul>
           </div>

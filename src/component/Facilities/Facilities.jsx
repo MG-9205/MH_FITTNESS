@@ -1,11 +1,22 @@
 import React from "react";
 import Slider from "../slider/Slider";
 import Image_index from "../../assets/image/Image_index";
-import Facilitiesstyle from './Facilities.module.css'
+import Facilitiesstyle from "./Facilities.module.css";
 
 export default function Facilities() {
   return (
     <>
+      <div className={Facilitiesstyle.heading}>
+        <h1>The Facilities</h1>
+        <p>
+          At MH Fitness Club, we pride ourselves on providing a premier fitness
+          experience in a cutting-edge facility. Our gym is thoughtfully
+          designed to cater to all your fitness needs, whether you're a beginner
+          or a seasoned athlete. With top-of-the-line equipment, spacious
+          workout areas, and a motivating atmosphere, we're here to help you
+          reach your fitness goals
+        </p>
+      </div>
       <div className={Facilitiesstyle.main_div}>
         <div classNameName={Facilitiesstyle.facility_div}>
           <div className={Facilitiesstyle.facility1}>

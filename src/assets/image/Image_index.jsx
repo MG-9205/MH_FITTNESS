@@ -16,12 +16,14 @@ import cardio from "./cardio.jpg"
 import gym from "./gym.jpg"
 import diet from "./nutrition.jpg"
 import swim from "./swim.jpg"
+import intro from "./gym2.jpg"
 
 const Image_index={
     "slider_image":[pic1,pic2,pic3,pic4,pic5,pic6,pic7,pic8],
     "about_img":[about1,about2,about3],
     "Facilities_img":[pool,locker,training_area],
-    "services_img":[cardio,gym,diet,swim]
+    "services_img":[cardio,gym,diet,swim],
+    "intro":intro
     
 }
 export default Image_index

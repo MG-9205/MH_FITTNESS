@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Slider from "../slider/Slider";
 import aboutstyle from "./about.module.css";
 import Image_index from "../../assets/image/Image_index";
+import Component2 from "../component2/Component2";
 
 export default function about() {
   return (
@@ -34,26 +35,33 @@ export default function about() {
           </div>
           <div className={aboutstyle.btn}>
             <button>
-              <Link  className={aboutstyle.btn_Link}>Become a Member</Link>
+              <Link to="/Membership" className={aboutstyle.btn_Link}>
+                Become a Member
+              </Link>
             </button>
             <button>
-              <Link  className={aboutstyle.btn_Link}>Join Now</Link>
+              <a href="#contact" className={aboutstyle.btn_Link}>
+                Join Now
+              </a>
             </button>
           </div>
         </div>
       </section>
       <div className={aboutstyle.about_intro}>
-      <p>
-      "Welcome to MH Fitness Club, where fitness meets transformation!
-       We are your premier destination for achieving your health and wellness goals.
-         Whether you're a seasoned athlete or just getting started, 
-         we have the resources and support you need to reach your peak performance. 
-      Join us today and unlock your full potential!"</p>
-     <div className={aboutstyle.btn}>
-     <button>
-              <Link  className={aboutstyle.btn_Link}>Join Now</Link>
-            </button> </div>
-    </div>
+        <p>
+          "Welcome to MH Fitness Club, where fitness meets transformation! We
+          are your premier destination for achieving your health and wellness
+          goals. Whether you're a seasoned athlete or just getting started, we
+          have the resources and support you need to reach your peak
+          performance. Join us today and unlock your full potential!"
+        </p>
+        <div className={aboutstyle.btn}>
+          <button>
+            <Link className={aboutstyle.btn_Link}>Join Now</Link>
+          </button>
+        </div>
+      </div>
+      <Component2 />
       <Slider />
     </>
   );
