@@ -1,8 +1,12 @@
+.super_div{
+  background-color: white;
+
+}
 .main_div {
   width: 100%;
   background-color: white;
   display: flex;
-  height: 110vh;
+  height: 690px;
   position: relative;
   overflow: hidden;
 }
@@ -24,6 +28,96 @@
 .img_div img {
   height: 500px;
   width: 800px;
+}
+.method_heading{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.method_div{
+  position: relative;
+  height: 120vh;
+  background-color: white;
+}
+.methods_container{
+display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15vh;
+
+}
+.method_bg{
+  width: 80vw;
+  background-color: pink;
+  height: 350px;
+}
+.method{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+.method_img{
+width: 21vw;
+height: 58vh;
+}
+.method_img img{
+  width: 21vw;
+  height: 58vh
+}
+.method_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ padding-top: 20px;
+  height: 200px;
+  width: 21vw;
+  transition: all 0.5s linear;
+  overflow: hidden;
+}
+.method_content h2{
+text-align: center;
+padding-bottom: 15px;
+}
+
+.method_content p{
+  text-align: center;
+  width: 80%;
+}
+.method_mobile_div{
+  display: none;
+}
+.method_mobile_img{
+  background-color: pink;
+  padding-top: 30px;
+}
+.method_mobile_img img{
+  width: 100%;
+  height: 50vh;
+}
+.method_mobile_content{
+padding-bottom: 30px;
+}
+.method_mobile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0 20px 0;
+}
+.method_mobile h2{
+  text-align: center;
+}
+.method_mobile p{
+  width: 80%;
+  text-align: center;
+  font-size: 1.3rem;
 }
 
 @media screen and (max-width: 700px) {
@@ -48,5 +142,11 @@
     width: 100%;
     height: 90%;
     object-fit: contain;
+  }
+  .method_mobile_div{
+    display: block;
+  }
+  .method_div{
+    display: none;
   }
 }
