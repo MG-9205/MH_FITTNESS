@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Layout from './Layout'
+import Layout from './Layout.jsx'
 import About from './component/About/About'
 import App from './App.jsx'
 import './index.css'
