@@ -7,7 +7,7 @@ To run the MH FITNESS web application locally, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/mh-fitness.git
+   git clone https://github.com/MG-9205/MH_FITTNESS.git
 2. **Navigate to the project directory:**
     cd mh-fitness
 3. **Install dependencies:**
