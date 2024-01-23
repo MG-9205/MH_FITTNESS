@@ -57,7 +57,7 @@ export default function about() {
         </p>
         <div className={aboutstyle.btn}>
           <button>
-            <Link className={aboutstyle.btn_Link}>Join Now</Link>
+            <a  href="#contact" className={aboutstyle.btn_Link}>Join Now</a>
           </button>
         </div>
       </div>
